@@ -18,7 +18,7 @@ class AssertedTextField extends Component {
 
     render() {
         const { error } = this.state;
-        const { helperText, ...other } = this.props;
+        const { helperText, predicate, ...other } = this.props;
 
         return (
             <TextField {...other} onChange={this.handleChange}
